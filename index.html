@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ammara Tahir — AI/ML Engineer</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Ammara Tahir — AI/ML Engineer from Islamabad, Pakistan. Specializing in Machine Learning, Deep Learning, NLP, Computer Vision, and MLOps. Open to remote & international opportunities.">
+<meta name="keywords" content="Ammara Tahir, AI Engineer, ML Engineer, Machine Learning, Deep Learning, NLP, Python, Pakistan, Remote">
+<meta name="author" content="Ammara Tahir">
+
+<!-- Open Graph / LinkedIn Preview Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ammaratahir252.github.io/">
+<meta property="og:title" content="Ammara Tahir — AI/ML Engineer">
+<meta property="og:description" content="AI/ML Engineer building production-grade ML systems. Skilled in Deep Learning, NLP, Computer Vision, and MLOps. Open to remote opportunities worldwide.">
+<meta property="og:image" content="https://ammaratahir252.github.io/-ammaratahir252.github.io/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Ammara Tahir Portfolio">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card (also used by some platforms) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ammara Tahir — AI/ML Engineer">
+<meta name="twitter:description" content="AI/ML Engineer building production-grade ML systems. Open to remote opportunities worldwide.">
+<meta name="twitter:image" content="https://ammaratahir252.github.io/-ammaratahir252.github.io/preview.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0B1E3D;
+    --navy-mid: #162B4D;
+    --navy-light: #1E3A5F;
+    --gold: #C8922A;
+    --gold-light: #E8B86D;
+    --cream: #F7F4EF;
+    --cream-dark: #EDE9E1;
+    --text-dark: #0D1B2A;
+    --text-mid: #3D4F62;
+    --text-muted: #7A8899;
+    --white: #FFFFFF;
+    --border: rgba(11,30,61,0.12);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--text-dark);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(11,30,61,0.97);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 3rem; height: 60px;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    color: var(--white); font-size: 18px; font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .nav-logo span { color: var(--gold-light); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a {
+    color: rgba(255,255,255,0.75); text-decoration: none;
+    font-size: 13px; font-weight: 400; letter-spacing: 0.5px;
+    text-transform: uppercase; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+
+  /* HERO */
+  #hero {
+    background: var(--navy);
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 100px 3rem 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero-grid-bg {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: linear-gradient(var(--white) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--white) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .hero-accent {
+    position: absolute; right: -80px; top: 50%; transform: translateY(-50%);
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(200,146,42,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; position: relative; z-index: 1; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(200,146,42,0.15); border: 1px solid rgba(200,146,42,0.3);
+    color: var(--gold-light); padding: 6px 16px; border-radius: 3px;
+    font-size: 12px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .hero-eyebrow::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold-light); flex-shrink: 0;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-weight: 600; color: var(--white);
+    line-height: 1.15; margin-bottom: 0.3rem;
+  }
+  .hero-sub {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    color: var(--gold-light); font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  .hero-desc {
+    color: rgba(255,255,255,0.65); font-size: 16px;
+    max-width: 560px; line-height: 1.8; margin-bottom: 2.5rem;
+  }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+  .btn-primary {
+    background: var(--gold); color: var(--white);
+    padding: 12px 28px; border-radius: 3px; text-decoration: none;
+    font-size: 14px; font-weight: 500; letter-spacing: 0.3px;
+    border: none; cursor: pointer; transition: background 0.2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); }
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.85);
+    padding: 12px 28px; border-radius: 3px; text-decoration: none;
+    font-size: 14px; font-weight: 400; transition: border-color 0.2s, color 0.2s;
+    display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold-light); color: var(--gold-light); }
+  .hero-stats {
+    display: flex; gap: 2.5rem; padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .stat-item { }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 1.8rem; font-weight: 600; color: var(--white);
+    line-height: 1;
+  }
+  .stat-label { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* SECTIONS */
+  section { padding: 5rem 3rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 600; color: var(--text-dark);
+    margin-bottom: 1rem; line-height: 1.2;
+  }
+  .section-line {
+    width: 48px; height: 3px; background: var(--gold);
+    margin-bottom: 2.5rem; border-radius: 2px;
+  }
+
+  /* ABOUT */
+  #about { background: var(--white); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .about-text p { color: var(--text-mid); margin-bottom: 1rem; font-size: 15px; line-height: 1.8; }
+  .about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.5rem; }
+  .tag {
+    background: #EFF4FB; color: #1E3A5F;
+    padding: 5px 14px; border-radius: 3px; font-size: 12px; font-weight: 500;
+    border: 1px solid #CCDAEA;
+  }
+  .about-card {
+    background: var(--navy); border-radius: 8px;
+    padding: 2rem; color: var(--white);
+  }
+  .about-card-title {
+    font-family: var(--font-display); font-size: 1.1rem;
+    color: var(--gold-light); margin-bottom: 1.2rem;
+  }
+  .about-card-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    margin-bottom: 0.9rem; font-size: 14px; color: rgba(255,255,255,0.75);
+  }
+  .about-card-item::before {
+    content: ''; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--gold); flex-shrink: 0; margin-top: 8px;
+  }
+
+  /* SKILLS */
+  #skills { background: var(--cream); }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+  .skill-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 6px; padding: 1.5rem;
+    border-top: 3px solid var(--gold);
+    transition: box-shadow 0.2s;
+  }
+  .skill-card:hover { box-shadow: 0 4px 20px rgba(11,30,61,0.08); }
+  .skill-card-title {
+    font-size: 13px; font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.8px; color: var(--navy); margin-bottom: 1rem;
+  }
+  .skill-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .skill-pill {
+    background: var(--cream); color: var(--text-mid);
+    padding: 4px 10px; border-radius: 3px; font-size: 12px;
+    border: 1px solid var(--border);
+  }
+
+  /* PROJECTS */
+  #projects { background: var(--white); }
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+  .project-card {
+    background: var(--cream); border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex; flex-direction: column;
+  }
+  .project-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(11,30,61,0.1); }
+  .project-header {
+    background: var(--navy-mid); padding: 1.4rem 1.5rem;
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+  }
+  .project-icon {
+    width: 40px; height: 40px; border-radius: 6px;
+    background: rgba(200,146,42,0.2); display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .project-badge {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.8px; text-transform: uppercase;
+    background: rgba(200,146,42,0.2); color: var(--gold-light);
+    padding: 3px 10px; border-radius: 3px; white-space: nowrap;
+  }
+  .project-body { padding: 1.25rem 1.5rem; flex: 1; }
+  .project-title {
+    font-family: var(--font-display); font-size: 1.05rem; font-weight: 600;
+    color: var(--text-dark); margin-bottom: 0.5rem;
+  }
+  .project-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.7; margin-bottom: 1rem; }
+  .project-stack { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1rem; }
+  .stack-tag {
+    background: var(--white); color: var(--navy);
+    border: 1px solid var(--border); padding: 3px 9px;
+    border-radius: 3px; font-size: 11px; font-weight: 500;
+  }
+  .project-footer {
+    padding: 1rem 1.5rem; border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .project-metric { font-size: 12px; color: var(--text-muted); }
+  .project-metric strong { color: var(--gold); }
+  .project-link {
+    font-size: 12px; font-weight: 500; color: var(--navy);
+    text-decoration: none; display: flex; align-items: center; gap: 4px;
+    transition: color 0.2s;
+  }
+  .project-link:hover { color: var(--gold); }
+
+  /* EXPERIENCE */
+  #experience { background: var(--cream); }
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before {
+    content: ''; position: absolute; left: 0; top: 8px; bottom: 8px;
+    width: 2px; background: var(--border);
+  }
+  .timeline-item { position: relative; margin-bottom: 2.2rem; }
+  .timeline-dot {
+    position: absolute; left: -2rem; top: 5px;
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--gold); border: 2px solid var(--cream);
+    transform: translateX(-4px);
+  }
+  .timeline-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 6px; padding: 1.25rem 1.5rem;
+    transition: box-shadow 0.2s;
+  }
+  .timeline-card:hover { box-shadow: 0 4px 16px rgba(11,30,61,0.07); }
+  .timeline-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.3rem; }
+  .timeline-role { font-weight: 500; font-size: 15px; color: var(--text-dark); }
+  .timeline-date { font-size: 12px; color: var(--text-muted); background: var(--cream); padding: 3px 10px; border-radius: 3px; }
+  .timeline-company { font-size: 13px; color: var(--gold); font-weight: 500; margin-bottom: 0.6rem; }
+  .timeline-points { list-style: none; }
+  .timeline-points li {
+    font-size: 13.5px; color: var(--text-mid); padding: 3px 0 3px 1rem;
+    position: relative; line-height: 1.6;
+  }
+  .timeline-points li::before {
+    content: ''; position: absolute; left: 0; top: 11px;
+    width: 4px; height: 4px; border-radius: 50%; background: var(--gold);
+  }
+
+  /* CERTIFICATIONS */
+  #certifications { background: var(--navy); }
+  #certifications .section-title { color: var(--white); }
+  #certifications .section-label { color: var(--gold-light); }
+  .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .cert-card {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px; padding: 1.2rem 1.4rem;
+    transition: background 0.2s;
+  }
+  .cert-card:hover { background: rgba(255,255,255,0.1); }
+  .cert-issuer { font-size: 11px; font-weight: 500; letter-spacing: 0.8px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 0.4rem; }
+  .cert-name { font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.5; }
+
+  /* CONTACT */
+  #contact { background: var(--white); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .contact-info p { color: var(--text-mid); margin-bottom: 2rem; }
+  .contact-items { display: flex; flex-direction: column; gap: 1rem; }
+  .contact-item {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 1rem 1.25rem; background: var(--cream);
+    border: 1px solid var(--border); border-radius: 6px;
+    text-decoration: none; color: var(--text-dark);
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .contact-item:hover { border-color: var(--gold); background: #FFF8EC; }
+  .contact-icon {
+    width: 36px; height: 36px; border-radius: 6px;
+    background: var(--gold); display: flex; align-items: center; justify-content: center;
+    font-size: 15px; flex-shrink: 0; color: var(--white);
+  }
+  .contact-icon svg { stroke: var(--white); }
+  .contact-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.6px; }
+  .contact-value { font-size: 14px; font-weight: 500; color: var(--text-dark); }
+  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 12px; font-weight: 500; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.5px; }
+  .form-group input, .form-group textarea {
+    padding: 11px 14px; border: 1px solid var(--border); border-radius: 4px;
+    font-family: var(--font-body); font-size: 14px; background: var(--cream);
+    color: var(--text-dark); outline: none; transition: border-color 0.2s;
+  }
+  .form-group input:focus, .form-group textarea:focus { border-color: var(--gold); background: var(--white); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy); padding: 1.8rem 3rem;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  footer p { color: rgba(255,255,255,0.4); font-size: 13px; }
+  footer span { color: var(--gold-light); }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 1.5rem; }
+    .nav-links { display: none; }
+    section { padding: 3.5rem 1.5rem; }
+    #hero { padding: 80px 1.5rem 50px; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-stats { gap: 1.5rem; }
+    footer { flex-direction: column; text-align: center; padding: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Ammara<span>.</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Available for opportunities</div>
+    <h1>Ammara Tahir</h1>
+    <div class="hero-sub">AI / ML Engineer · Computer Vision · LLMs</div>
+    <p class="hero-desc">
+      Building intelligent systems that solve real problems — from LLM-powered educational platforms to computer vision applications deployed in production. Based in Islamabad, open to remote and international roles.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Internships</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">ML Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Deployments</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">AI Domains</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">About me</div>
+        <h2 class="section-title">AI Engineer with a builder's mindset</h2>
+        <div class="section-line"></div>
+        <p>I'm an AI/ML Engineer with hands-on experience across the full model lifecycle — from data preprocessing and feature engineering through to deployment and production integration. I hold a BSc in Computer Science from Riphah International University (Dec 2025).</p>
+        <p>Currently contributing to the Samsung Innovation Campus AI program while interning at HEX Technologies, I thrive on turning complex AI concepts into practical, deployable applications that deliver real value.</p>
+        <p>My focus areas are LLMs & RAG systems, Computer Vision, and end-to-end ML pipelines — I don't just build models, I ship them.</p>
+        <div class="about-tags">
+          <span class="tag">LLMs & RAG</span>
+          <span class="tag">Computer Vision</span>
+          <span class="tag">NLP</span>
+          <span class="tag">MLOps</span>
+          <span class="tag">Flask / Streamlit</span>
+          <span class="tag">Python</span>
+          <span class="tag">Remote-ready</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-title">What I bring to your team</div>
+        <div class="about-card-item">End-to-end ownership — from problem scoping to deployed API</div>
+        <div class="about-card-item">Experience across NLP, CV, classical ML, and Generative AI</div>
+        <div class="about-card-item">Production-grade code with structured documentation</div>
+        <div class="about-card-item">Fast learner — 6 internships in 3 months, all delivering working products</div>
+        <div class="about-card-item">Strong communicator with professional English proficiency</div>
+        <div class="about-card-item">Comfortable with remote workflows, async collaboration, and GitHub-based delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">Technical expertise</div>
+    <h2 class="section-title">Skills & Technologies</h2>
+    <div class="section-line"></div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-title">ML & AI</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Scikit-learn</span><span class="skill-pill">XGBoost</span>
+          <span class="skill-pill">Random Forest</span><span class="skill-pill">SVM</span>
+          <span class="skill-pill">Logistic Regression</span><span class="skill-pill">K-Means</span>
+          <span class="skill-pill">SMOTE</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title">Deep Learning</div>
+        <div class="skill-pills">
+          <span class="skill-pill">TensorFlow</span><span class="skill-pill">Keras</span>
+          <span class="skill-pill">PyTorch</span><span class="skill-pill">CNN</span>
+          <span class="skill-pill">MLP</span><span class="skill-pill">Transfer Learning</span>
+          <span class="skill-pill">MFCC</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title">NLP & LLMs</div>
+        <div class="skill-pills">
+          <span class="skill-pill">LangGraph</span><span class="skill-pill">LLaMA 3.2</span>
+          <span class="skill-pill">HuggingFace</span><span class="skill-pill">TF-IDF</span>
+          <span class="skill-pill">NLTK</span><span class="skill-pill">Faster-Whisper</span>
+          <span class="skill-pill">RAG</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title">Computer Vision</div>
+        <div class="skill-pills">
+          <span class="skill-pill">OpenCV</span><span class="skill-pill">OCR</span>
+          <span class="skill-pill">CNN (TF/Keras)</span><span class="skill-pill">Object Detection</span>
+          <span class="skill-pill">Image Classification</span><span class="skill-pill">React Native CV</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title">Deployment & APIs</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Flask</span><span class="skill-pill">Streamlit</span>
+          <span class="skill-pill">REST APIs</span><span class="skill-pill">MongoDB Atlas</span>
+          <span class="skill-pill">Firebase</span><span class="skill-pill">Git/GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title">Data & Visualization</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Pandas</span><span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Matplotlib</span><span class="skill-pill">Seaborn</span>
+          <span class="skill-pill">EDA</span><span class="skill-pill">Feature Engineering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="section-line"></div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🎓</div>
+          <span class="project-badge">Capstone · LLMs</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">HumSabaq AI — Educational Platform</div>
+          <p class="project-desc">Three-chatbot unified platform: Document Intelligence (PDF/DOCX Q&A + quizzes), SmartVoice (4-agent LangGraph pipeline with diarization & TTS), and AI Timetable Manager — all via a single launcher with MongoDB session history.</p>
+          <div class="project-stack">
+            <span class="stack-tag">LangGraph</span><span class="stack-tag">LLaMA 3.2</span>
+            <span class="stack-tag">Faster-Whisper</span><span class="stack-tag">Flask</span>
+            <span class="stack-tag">MongoDB Atlas</span><span class="stack-tag">Node.js</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <div class="project-metric">Samsung Innovation Campus <strong>Capstone</strong></div>
+          <a href="https://github.com/Ammaratahir252" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🏥</div>
+          <span class="project-badge">Computer Vision</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">MedShare — AI Healthcare App</div>
+          <p class="project-desc">Mobile healthcare app using custom CV models to automate prescription processing — detecting medicine names, dosages, and expiry dates from images. Reduced manual data entry by 90%.</p>
+          <div class="project-stack">
+            <span class="stack-tag">React Native</span><span class="stack-tag">Computer Vision</span>
+            <span class="stack-tag">OCR</span><span class="stack-tag">MongoDB Atlas</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <div class="project-metric"><strong>90%</strong> reduction in manual entry</div>
+          <a href="https://github.com/Ammaratahir252" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📧</div>
+          <span class="project-badge">NLP · Deployed</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Email Spam Classifier</div>
+          <p class="project-desc">End-to-end NLP pipeline with TF-IDF (8K features + bigrams), three-classifier comparison (Naive Bayes, Logistic Regression, Linear SVM), deployed as Flask API with live metrics dashboard and confusion matrices.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span><span class="stack-tag">TF-IDF</span>
+            <span class="stack-tag">Scikit-learn</span><span class="stack-tag">Flask</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <div class="project-metric">8K features · <strong>3 classifiers</strong> compared</div>
+          <a href="https://github.com/Ammaratahir252" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🤖</div>
+          <span class="project-badge">NLP · No pre-trained</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">AI Customer Support Chatbot</div>
+          <p class="project-desc">Custom NLP pipeline built from scratch — NLTK tokenization, TF-IDF vectorization, cosine similarity intent recognition across 12 categories. Production chat UI with typing indicators and session management. Zero pre-trained models.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span><span class="stack-tag">NLTK</span>
+            <span class="stack-tag">TF-IDF</span><span class="stack-tag">Flask REST API</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <div class="project-metric"><strong>12</strong> intent categories</div>
+          <a href="https://github.com/Ammaratahir252" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📊</div>
+          <span class="project-badge">Classical ML</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">ML Business Analytics Suite</div>
+          <p class="project-desc">Three production ML apps: Customer Churn Prediction, Real Estate Price Prediction (Streamlit UI), and K-Means Customer Segmentation for behavioral persona classification — all with full EDA and feature engineering.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Scikit-learn</span><span class="stack-tag">XGBoost</span>
+            <span class="stack-tag">Streamlit</span><span class="stack-tag">K-Means</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <div class="project-metric">3 apps · <strong>end-to-end</strong> delivery</div>
+          <a href="https://github.com/Ammaratahir252" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🚦</div>
+          <span class="project-badge">Computer Vision</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">CNN Traffic Sign Recognition</div>
+          <p class="project-desc">Multi-class traffic sign classifier using CNN with TensorFlow/Keras and OpenCV preprocessing. Also includes audio genre classification (GTZAN dataset) using MFCCs and CNN spectrograms with SMOTE for class imbalance.</p>
+          <div class="project-stack">
+            <span class="stack-tag">TensorFlow</span><span class="stack-tag">Keras</span>
+            <span class="stack-tag">OpenCV</span><span class="stack-tag">SMOTE</span><span class="stack-tag">Librosa</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <div class="project-metric">CV + Audio · <strong>multi-domain</strong></div>
+          <a href="https://github.com/Ammaratahir252" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">Work history</div>
+    <h2 class="section-title">Internships & Experience</h2>
+    <div class="section-line"></div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">AI / ML Engineer Intern</div>
+            <div class="timeline-date">Apr 2026 – Present</div>
+          </div>
+          <div class="timeline-company">HEX Technologies · Remote</div>
+          <ul class="timeline-points">
+            <li>Developing and deploying AI-powered applications across the full model lifecycle — data preparation, training, evaluation, and production integration.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">AI Research & Development Trainee</div>
+            <div class="timeline-date">Feb 2026 – Present</div>
+          </div>
+          <div class="timeline-company">Samsung Innovation Campus × Bramerz · Pakistan</div>
+          <ul class="timeline-points">
+            <li>Selected for Samsung's globally recognized AI/ML training program (2nd Pakistan cohort).</li>
+            <li>Leading development of HumSabaq AI — a three-chatbot educational platform as the program capstone using LangGraph, LLaMA 3.2, and MongoDB Atlas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Machine Learning Engineer</div>
+            <div class="timeline-date">Mar – Apr 2026</div>
+          </div>
+          <div class="timeline-company">Arch Technologies · Remote</div>
+          <ul class="timeline-points">
+            <li>Built Email Spam Classifier (TF-IDF, 8K features, 3 classifiers) and MNIST Digit Recognition (70K samples) — both deployed via Flask with live metrics dashboards.</li>
+            <li>Managed full ML pipelines: preprocessing, feature engineering, hyperparameter tuning, evaluation, and GitHub deployment.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Artificial Intelligence Engineer</div>
+            <div class="timeline-date">Mar 2026</div>
+          </div>
+          <div class="timeline-company">SoftGrowTech · Remote</div>
+          <ul class="timeline-points">
+            <li>Built AI Customer Support Chatbot from scratch — custom NLP pipeline with NLTK, TF-IDF, cosine similarity, intent recognition across 12 categories, served as a Flask REST API with production-grade chat UI.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Artificial Intelligence Engineer</div>
+            <div class="timeline-date">Feb – Mar 2026</div>
+          </div>
+          <div class="timeline-company">Afynix Digital · Remote</div>
+          <ul class="timeline-points">
+            <li>Developed Customer Churn Prediction, Real Estate Price Prediction (Streamlit UI), and K-Means Customer Segmentation — end-to-end across EDA, feature engineering, training, and front-end integration.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-role">Machine Learning Intern</div>
+            <div class="timeline-date">Feb 2026</div>
+          </div>
+          <div class="timeline-company">Elevvo Pathways · Cairo, Egypt (Remote)</div>
+          <ul class="timeline-points">
+            <li>Built projects across supervised learning, clustering, recommendation systems (MovieLens, Precision@K), time series forecasting (Walmart), and CNN-based computer vision and audio classification.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-label">Credentials</div>
+    <h2 class="section-title">Certifications</h2>
+    <div class="section-line" style="background: var(--gold);"></div>
+    <div class="certs-grid">
+      <div class="cert-card">
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-name">Exploratory Data Analysis with Python and Pandas</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-name">Python for Data Analysis: Pandas and NumPy</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-issuer">UNAM</div>
+        <div class="cert-name">NoSQL Systems</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-issuer">University of Minnesota</div>
+        <div class="cert-name">Agile Software Development</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-issuer">Samsung Innovation Campus</div>
+        <div class="cert-name">AI/ML Program — Python, Big Data, ML, Deep Learning</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label">Let's connect</div>
+        <h2 class="section-title">Open to opportunities</h2>
+        <div class="section-line"></div>
+        <p>I'm actively seeking AI/ML Engineer roles — remote, international, or Pakistan-based. If you're looking for someone who builds and ships, let's talk.</p>
+        <div class="contact-items">
+          <a href="mailto:tahirammara9@gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">tahirammara9@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+923411164108" class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">(+92) 341-1164108</div>
+            </div>
+          </a>
+          <a href="https://github.com/Ammaratahir252" class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/Ammaratahir252</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ammara-tahir-991258348/" class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">ammara-tahir-991258348</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Your name</label>
+            <input type="text" placeholder="e.g. Sara Khan">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="sara@company.com">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me about the opportunity..."></textarea>
+          </div>
+          <a href="mailto:tahirammara9@gmail.com" class="btn-primary" style="text-align:center; width: 100%;">Send Message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Ammara Tahir</span> · AI/ML Engineer · Islamabad, Pakistan</p>
+  <p>Built to get hired. Open to remote worldwide.</p>
+</footer>
+
+</body>
+</html>
